@@ -91,7 +91,7 @@ public class Controller2D : MonoBehaviour {
 
 	void UpdateRaycastOrigins() {
 		Bounds bounds = collider.bounds;
-		bounds.Expand (skinWidth * -2);
+		bounds.Expand(skinWidth * -2);
 
 		raycastOrigins.bottomLeft = new Vector2 (bounds.min.x, bounds.min.y);
 		raycastOrigins.bottomRight = new Vector2 (bounds.max.x, bounds.min.y);
